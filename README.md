@@ -9,7 +9,7 @@ Install dependencies with `pipenv install`, then start the service with
 pipenv run python app.py -p 8080
 ```
 
-Then you can query form localhost like so
+Then you can query from localhost like so
 
 ```bash
 curl localhost:8080/crawl -d "url=https://www.centralpark-hamburg.de" -X POST
