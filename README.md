@@ -1,6 +1,6 @@
 # PDF Crawl
 
-Web service for retrieving list of url form web domain. The urls are classified into PDF and other. 
+Web service for retrieving list of urls form web domain. The urls are classified into PDF and other. 
 
 ## How to use
 Install dependencies with `pipenv install`, then start the service with
