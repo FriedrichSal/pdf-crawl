@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+ipython = "*"
+ipdb = "*"
+pylint = "*"
+
+[packages]
+requests = "*"
+beautifulsoup4 = "*"
+pandas = "*"
+ipython = "*"
+ipdb = "*"
+flask = "*"
+flask-restful = "*"
+pypdf2 = "*"
+flask-httpauth = "*"
+
+[pipenv]
+allow_prereleases = true
