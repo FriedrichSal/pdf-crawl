@@ -38,6 +38,10 @@ class CrawlTask(Resource):
         layers = int(layers)
         out = filecrawl_with_url(website_url=url, num_layers=layers)
         print(out)
+        if out is None:
+            out = {"query_url": {url}, "status": "error"}
+        else:
+            out["query_url"] = url
         return out
 
 
