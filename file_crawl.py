@@ -133,15 +133,14 @@ def get_pdf_urls_from_site(website_url, num_layers=2):
 
 
     return {
+        'base_url': website_url,
         'pdf_urls': pdf_urls,
         'html_urls': site_urls,
         'resp_url': resp_url,
         'num_html': len(site_urls),
         'num_pdf': len(pdf_urls),
         'num_layers': num_layers,
-        'base_url': website_url,
         'crawl_time': str(datetime.datetime.now())
-
     }
 
 

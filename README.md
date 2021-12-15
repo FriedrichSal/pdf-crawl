@@ -20,3 +20,6 @@ By default, the search is two layers deep. You can go one level deeper by queryi
 ```bash
 curl localhost:8080/crawl -d "url=https://www.centralpark-hamburg.de&layers=3" -X POST
 ```
+
+
+curl https://pdf-crawl-5ekifxtyca-ew.a.run.app/crawl -d "url=https://www.centralpark-hamburg.de" -X POST
