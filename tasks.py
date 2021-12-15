@@ -37,7 +37,7 @@ def filecrawl_with_url(website_url, num_layers=2):
     out = get_pdf_urls_from_site(url, num_layers=num_layers)
     if out is None:
         logger.info("{} is DEAD.".format(website_url))
-        return {f"base_url": {url},  "status": "DEAD"}
+        return {"base_url": url,  "status": "DEAD"}
 
     logger.info("{} processed. DONE".format(website_url))
     out["STATUS"] = "OK"
