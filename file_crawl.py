@@ -68,7 +68,12 @@ def get_pdf_urls_from_site(website_url, num_layers=2):
 
     # Get all unique urls from home page which are pointing to pages on that site
     site_urls_first_layer = scrape_site_urls_from_page(website_url)
-    site_urls_first_layer = list(set(site_urls_first_layer))
+    if site_urls_first_layer is None:
+        logger.info("No urls in site_urls_first_layer. Abort crawl")
+
+        return None
+    else:
+        site_urls_first_layer = list(set(site_urls_first_layer))
 
     logger.info("Found {} pages linked directly on {}".format(len(site_urls_first_layer), website_url))
 
